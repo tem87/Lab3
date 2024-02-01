@@ -38,13 +38,14 @@ Description : A simple HTML file for form tag.
             <label for="female">Female</label><br>
             <!-- Radio button for 'Other' -->
             <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label><br>
+            <label for="other">Other</label><br><br>
             <label for="fruits">Choose a fruit:</label><br>
             <select id="fruits" name="fruits">
-				<option value="apple">Apple</option>
+				
                 <!-- Add options for various fruits like Banana, Orange, etc. (At least 10 fruits) -->
               
-                <option value="banana">Banana</option>
+                <!--<option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
                 <option value="orange">Orange</option>
                 <option value="grape">Grape</option>
                 <option value="strawberry">Strawberry</option>
@@ -52,7 +53,7 @@ Description : A simple HTML file for form tag.
                 <option value="watermelon">Watermelon</option>
                 <option value="kiwi">Kiwi</option>
                 <option value="mango">Mango</option>
-                <option value="pear">Pear</option>
+                <option value="pear">Pear</option>-->
             </select><br>
 			<!-- Add some attributes to select tag that changes it from a drop menu to a scrollable list.-->
             <select id="fruits" name="fruits" size="5" style="overflow-y: auto;">
@@ -69,6 +70,7 @@ Description : A simple HTML file for form tag.
                 <option value="pear">Pear</option>
             </select><br>
             
+            
         </fieldset>
 
         <fieldset>
@@ -82,9 +84,13 @@ Description : A simple HTML file for form tag.
             <label for="quantity">Quantity (between 1 and 5):</label><br>
             <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
             <label for="range">Range (between 1 and 10):</label><br>
-            <input type="range" id="range" name="range" min="1" max="10"><br>
+            <input type="range" id="range" name="range" min="1" max="10" value="2" style="background: linear-gradient(to right, blue, blue);"><br>
 			<!-- Add an attribute to the range input to set its initial value to 2-->
+
             <!-- Add a label and input field for 'Homepage', use the correct type for URLs -->
+            <label for="homepage">Homepage:</label><br>
+            <input type="url" id="homepage" name="homepage"><br>
+
             <label for="feedback">Feedback:</label><br>
             <textarea id="feedback" name="feedback" rows="5" cols="50"></textarea><br>
 <!-- Add some attributes to the feedback textarea tag to make it bigger and suitable for editing texts -->
